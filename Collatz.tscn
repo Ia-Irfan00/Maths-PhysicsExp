@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5mtgccrciwdq"]
+
+[ext_resource type="Script" uid="uid://bxmewgox5sp33" path="res://Collatz.gd" id="1_8adjb"]
+
+[node name="Node" type="Node" unique_id=146323764]
+script = ExtResource("1_8adjb")

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dda0aidsedbii"]
+
+[ext_resource type="Script" uid="uid://bm2s6et34f8to" path="res://meeting_point.tscn.gd" id="1_4452i"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_xrivr"]
+
+[node name="Node3D" type="Node3D" unique_id=2070077843 node_paths=PackedStringArray("A", "B")]
+script = ExtResource("1_4452i")
+A = NodePath("A")
+B = NodePath("B")
+
+[node name="A" type="MeshInstance3D" parent="." unique_id=529682935]
+mesh = SubResource("SphereMesh_xrivr")
+
+[node name="B" type="MeshInstance3D" parent="." unique_id=1054462622]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 0)
+mesh = SubResource("SphereMesh_xrivr")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2116106195]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45, 0, 0)
